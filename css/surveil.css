@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#map {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.leaflet-popup-content img {
+  max-width: 250px;
+}
