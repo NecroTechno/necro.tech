@@ -1,0 +1,89 @@
+==================================================================
+https://keybase.io/necrotechno
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://necro.tech
+  * I am necrotechno (https://keybase.io/necrotechno) on keybase.
+  * I have a public key with fingerprint 538F 53D1 B8C9 69BB 3B56  D131 BF09 9E07 53F0 A785
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01205595916814e5e57891f2fdc72dc26ed852015f14f143c21afa7574280d698c200a",
+      "fingerprint": "538f53d1b8c969bb3b56d131bf099e0753f0a785",
+      "host": "keybase.io",
+      "key_id": "bf099e0753f0a785",
+      "kid": "01017e2656d7035c9f98d0260ad34e7e8ac5f123c42711cf94b051e55dadf33861900a",
+      "uid": "ff888ec2b2d5902bf8f6a06d72192919",
+      "username": "necrotechno"
+    },
+    "merkle_root": {
+      "ctime": 1551432594,
+      "hash_meta": "79542bedeab40682af0f22773ef1e1674e11f5a379be0f4f56f3c6d41d13859e",
+      "seqno": 4854550
+    },
+    "revoke": {
+      "sig_ids": [
+        "c08ca7ef4ded6641ea77d64453b10af6ae570589a24ba7f90d1297aaa9158d860f"
+      ]
+    },
+    "service": {
+      "hostname": "necro.tech",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1551432611,
+  "expire_in": 157680000,
+  "prev": "981b6e3539a3a6c13f3d6ea245b06a97db715524efa17209bbb748b7ddbc729d",
+  "seqno": 27,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMQAAnicbZMLbBRFGMevlaI0UAqU8gZZJWJKcWZ2Z3enyEMbrBSE0kZFix6zOzO9
+tb1H764vSlF5hKZUqA8oIi1QBCuplWKUGh7CWcXYakmIiAUlNMUQDI+EogGhOlcl
+auJmk81O/t//+3+/mWkbco8rPuazQfX35lx7b21Me6SkyLW09Pdd5YrlZ2VKWrmS
+z/s/vIDxUNid7zAlTQEQAYwJJlA3ocYxx4ZJoECC2QZiNtI5MzECEAuoyVe1EaSC
+GtjQkAmYTkwbAUCVaYpwfHk8GAg6vrC0xaopsMqgZdpEJ5alWlhnUIWWAIRwYGBV
+AGqYWBZ6/KFohQxn0RCf7vjlmvxx98f7H/3d3AAaHOnS1gAqtokgJgNIB5SpGje4
+SW0ZGam2hgwIbUE0C2DIMWaUCVU1dUj+yl3UbyeEaZrcRhZimABkCVPoFEhvBAki
+kESFIR70US+Xah+3g/4wtz0+v1IxTfHyYH4Bdwf9/nCUrx12oiqIseSFMNHkjDTk
+cXt5mMpig2ANWZxxamlANxEVQCBkGCoXkEPd0DiEAlPVIBYHQhNYF6qtMw1KfiYm
+XEYJ8ULZOU0zsYYxkAmCvNifz6PNQ06eJBdS0nIVG5g2NbjQGGe6rkFODYPpmoZV
+CwIq55N7DbBJKNIsaggCGETEoJQSiE1m6kAoL1REmwWLHbvfPLpV/0YwPcpA5glI
+Gn7bXyDXPeFwIJQWpRIuC0SFJdxy/23hthwfk8dEVhTzYMjx+yQlqfwvMB3CaQov
+DThB7naiCmzoJpBPtA8vlpbEhJbOVawSqlLdhqpQmc7lGNgCOiUGswzphTQuKDQQ
+kMfPMjTTMhiz5KEm7B+CyJA5aZ70lNx8NFwU5EpF5NjSAa6YeNfAuNjo/XHFD0q8
+e6uueRNd61fOXPZu86qjW4+GUyfU6k5PWWXKspxzOb3b+mZtKavJuL3h/ropxWRS
+7eKPK5oOofTW4UkXxt15Z9/O1kG9J9WMZbXDT9DukcVfrnt99M9fjJ394qmHs3jf
+qCuuMwlP9c65MWn9oo5D3qyYltz6bfF7Bn7TvN1p3xI7N+Xcwf2wfGfFqMXpH6x/
+oNFbzgf3rBm/+eCj528GCiOluWsyG0vON9VcHJPUcHO+e0mkpmX5qcWnL8OU8jMJ
+1VMbMj/pSU/Ar46Y8tLVrIa+72ZdbT632o60BrMHlGSfVB8pE0sWzhuWWrXK0/bD
+k01xSZXTl3dVdnd2N5/dPjuyN7n08fs6B2zqS/h05/dvZjdcSW3q9lzAIxd2rQNf
+d16sqYrN2uGdfOGrl986cWnF2CF7E+awzosPZcKMj4b3Xotd9W171+7PN85ttq8P
+bnxm++b3nVeGxuXtb0mKfTB52NAJcWLPuPCB2bszFdVKrvvtscbTMeNvRTpWukcf
+yb6z2/NhYQP949KRGcfNjGD7xqK6gvqkxss9Q1Mr82vHZbbV+xbMP/R27JiN/udB
+btuC10rMTb+sPr1ySfqvrce05RsKN8yo9u7K2dGlT5zacPt64qytORMPJz+7qCPx
+1q2DHQe2jqhNwfsOp+POlBWDn2NnkzqfbtGO+2/sb69eO/d4/I9qVc8TgQlvBMoH
+ojpY+JN+fnI1zp/pmfcnNnP5xg==
+=EbD9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/necrotechno
+
+==================================================================
+
