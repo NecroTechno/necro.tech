@@ -9,3 +9,8 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install rsync
       - add_ssh_keys
       - run: rsync -va --delete "$PWD" necro.tech:/var/www/necro.tech/public_html
+
+workflows:
+  Deploy:
+    jobs:
+      - deploy
