@@ -8,6 +8,7 @@ jobs:
       - checkout
       - run: sudo apt-get update && sudo apt-get install rsync
       - add_ssh_keys
+      - run: ssh-keyscan -H necro.tech >> ~/.ssh/known_hosts
       - run: rsync -va --delete "$PWD" necro.tech:/var/www/necro.tech/public_html
 
 workflows:
