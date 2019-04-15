@@ -1,0 +1,11 @@
+version: 2.1
+
+jobs:
+  deploy:
+    docker:
+      - image: circleci/node:stretch
+    steps:
+      - checkout
+      - run: sudo apt-get update && sudo apt-get install rsync
+      - add_ssh_keys
+      - run: rsync -va --delete "$PWD" necro.tech:/var/www/necro.tech/public_html
