@@ -9,7 +9,7 @@ jobs:
       - run: sudo apt-get update && sudo apt-get install rsync
       - add_ssh_keys
       - run: ssh-keyscan -H necro.tech >> ~/.ssh/known_hosts
-      - run: rsync -e "ssh -p 2222" -va --delete "$PWD" necro.tech:/var/www/necro.tech/public_html
+      - run: rsync -va --delete "$PWD" necro.tech:/var/www/necro.tech/public_html
 
 workflows:
   Deploy:
