@@ -5,7 +5,11 @@ body {
   background-color: #061041;
 }
 
-p, a {
+.no-margin {
+  margin: 0;
+}
+
+a {
   margin: 0;
 }
 
