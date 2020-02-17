@@ -1,10 +1,17 @@
 @font-face {
-  font-family: "IBMVGA8";
-  src: url("fonts/Px437_IBM_VGA8.ttf");
+  font-family: "FiraCode";
+  src: url("fonts/FiraCode-Regular.ttf") format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "FiraCode";
+  src: url("fonts/FiraCode-Bold.ttf") format('truetype');
+  font-weight: bold;
 }
 
 body {
-  font-family: "IBMVGA8", monospace;
+  font-family: "FiraCode", Consolas, monospace;
   color: #ef5c73;
   background-color: #061041;
 }
