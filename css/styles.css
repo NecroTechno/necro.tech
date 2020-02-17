@@ -1,4 +1,10 @@
 @import url('fonts/Px437_IBM_VGA8.ttf');
+
+@font-face {
+  font-family: IBMVGA8;
+  src: url("fonts/Px437_IBM_VGA8.ttf");
+}
+
 body {
   font-family: IBMVGA8, monospace;
   color: #ef5c73;
