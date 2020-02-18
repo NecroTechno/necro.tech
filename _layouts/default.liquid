@@ -30,11 +30,11 @@
   <div class="container">
     <div class="content">
       <p class="no-margin"><a href="https://blog.necro.tech/">blog.necro.tech</a></p>
-	<p class="no-margin"><a rel="me" href="https://ghost.cafe/@NecroTechno">ghost.cafe/@NecroTechno</a></p>
-	<p class="no-margin"><a rel="me" href="https://tilde.club/~necrotechno/">tilde.club/~necrotechno</a></p>
-	<p class="no-margin"><a rel="me" href="https://glitch.com/@NecroTechno">glitch.com/@NecroTechno</a></p>
-	<p class="no-margin"><a href="mailto:necrotechno@riseup.net">necrotechno@riseup.net</a></p>
-	<p class="no-margin">GPG - 538F 53D1 B8C9 69BB 3B56 D131 BF09 9E07 53F0 A785</p>
+      <p class="no-margin"><a rel="me" href="https://ghost.cafe/@NecroTechno">ghost.cafe/@NecroTechno</a></p>
+      <p class="no-margin"><a rel="me" href="https://tilde.club/~necrotechno/">tilde.club/~necrotechno</a></p>
+      <p class="no-margin"><a rel="me" href="https://glitch.com/@NecroTechno">glitch.com/@NecroTechno</a></p>
+      <p class="no-margin"><a href="mailto:necrotechno@riseup.net">necrotechno@riseup.net</a></p>
+      <p class="no-margin">GPG - 538F 53D1 B8C9 69BB 3B56 D131 BF09 9E07 53F0 A785</p>
     </div>
   </div>
   <div class="container">
@@ -44,9 +44,23 @@
   </div>
   <div class="container">
     <div class="content">
-	<p class="no-margin"><a href="https://www.eff.org/" target="_blank">EFF</a></p>
-	<p class="no-margin"><a href="https://www.resetera.com/" target="_blank">ResetEra</a></p>
-  <p class="no-margin"><a href="https://vetusware.com/" target="_blank">VETUSWARE</a></p>
+      <p class="no-margin"><a href="https://www.eff.org/" target="_blank">EFF</a></p>
+      <p class="no-margin"><a href="https://www.resetera.com/" target="_blank">ResetEra</a></p>
+      <p class="no-margin"><a href="https://vetusware.com/" target="_blank">VETUSWARE</a></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header">
+      <p class="no-margin"><strong>latest commits</strong></p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      {% for log in site.data.commits limit:5 %}
+        <p class="no-margin"><a target="_blank" href="https://github.com/NecroTechno/necro.tech/commit/{{ log.commit }}">{{ log.commit }}</a></p>
+        <p class="no-margin">{{ log.message }}</p>
+        <p>{{ log.date }}</p>
+      {% endfor %}
     </div>
   </div>
 </body>
