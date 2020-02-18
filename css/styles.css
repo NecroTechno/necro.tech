@@ -1,7 +1,12 @@
+:root {
+  --foreground-color: #A16A95;
+  --background-color: #110411;
+}
+
 body {
   font-family: "Consolas", monospace;
-  color: #ef5c73;
-  background-color: #061041;
+  color: var(--foreground-color);
+  background-color: var(--background-color);
 }
 
 .no-margin {
@@ -13,7 +18,7 @@ a {
 }
 
 a {
-  color: #ef5c73;
+  color: var(--foreground-color);
 }
 
 a:hover, a:active {
@@ -22,7 +27,7 @@ a:hover, a:active {
 
 .header {
   margin: 20px 0;
-  border-bottom: 2px solid #ef5c73;
+  border-bottom: 2px solid var(--foreground-color);
 }
 
 .content {
