@@ -8,6 +8,7 @@ jobs:
       - checkout
       - run: echo 'export PATH=$HOME/.cargo/bin:$PATH' >> $BASH_ENV
       - run: curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git cobalt-org/cobalt.rs --crate cobalt
+      - run: ./git_log.sh
       - run: cobalt build
       - run: sudo apt-get update && sudo apt-get install rsync
       - add_ssh_keys
