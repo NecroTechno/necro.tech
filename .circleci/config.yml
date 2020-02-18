@@ -6,11 +6,12 @@ jobs:
       - image: circleci/rust:stretch
     steps:
       - checkout
+      - run: export PATH=$HOME/.cargo/gin:$PATH
+      - run: curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git cobalt-org/cobalt.rs --crate cobalt
+      - run: cobalt build
       - run: sudo apt-get update && sudo apt-get install rsync
       - add_ssh_keys
       - run: ssh-keyscan -H necro.tech >> ~/.ssh/known_hosts
-      - run: curl -LSfs https://japaric.github.io/trust/install.sh | sh -s -- --git cobalt-org/cobalt.rs --crate cobalt
-      - run: cobalt build
       - run: rsync -va --exclude '.git' --exclude '.circleci' --delete ./_site/ circleci@necro.tech:/var/www/necro.tech/public_html
 
 workflows:
