@@ -1,3 +1,3 @@
 # Personal Website
 
-necro.tech source
+[necro.tech](https://necro.tech)
