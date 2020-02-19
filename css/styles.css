@@ -1,5 +1,6 @@
 :root {
   --foreground-color: #A16A95;
+  --foreground-color-alt: #916AA1;
   --background-color: #110411;
 }
 
@@ -24,7 +25,7 @@ a {
 }
 
 a:hover, a:active {
-  color: #bc4759;
+  color: var(--foreground-color-alt);
 }
 
 .no-margin {
@@ -66,6 +67,7 @@ a:hover, a:active {
     max-width: 800px;
     position: relative;
     overflow: auto;
+    right: auto;
   }
   .sidebar:after {
     content: "";
