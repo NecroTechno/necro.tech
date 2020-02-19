@@ -7,10 +7,12 @@ body {
   font-family: "Consolas", monospace;
   color: var(--foreground-color);
   background-color: var(--background-color);
+  padding: 10px;
+  line-height: 1.6;
 }
 
-.no-margin {
-  margin: 0;
+p {
+  margin-top: 0px;
 }
 
 a {
@@ -25,6 +27,28 @@ a:hover, a:active {
   color: #bc4759;
 }
 
+.no-margin {
+  margin: 0;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.container:after, .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sidebar {
+  max-width: 300px;
+  position: fixed;
+  padding: 0 20px;
+  background: black;
+  right: 10px;
+}
+
 .header {
   margin: 20px 0;
   border-bottom: 2px solid var(--foreground-color);
@@ -32,4 +56,20 @@ a:hover, a:active {
 
 .content {
   margin: 20px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar, .container {
+    margin: auto;
+  }
+  .sidebar {
+    max-width: 800px;
+    position: relative;
+    overflow: auto;
+  }
+  .sidebar:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

@@ -3,40 +3,34 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>{{ page.title }}</title>
+  {% if page.slug == "index" %}
+  <title>NecroTechno</title>
+  {% else %}
+  <title>NecroTechno - {{ page.title }}</title>
+  {% endif %}
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
-  <link rel="stylesheet" type="text/css" href="/css/skeleton.css" />
   <link rel="stylesheet" type="text/css" href="/css/styles.css" />
 </head>
 
 <body>
-  <div class="container">
-    <div class="header">
-      <p class="no-margin"><strong>necro.tech</strong></p>
-    </div>
-  </div>
-  <div class="container">
-    <div class="content">
-      <p class="no-margin">Labour is entitled to all it creates.</p>
 
-    </div>
-  </div>
+  {% include "sidebar.liquid" %}
+
   <div class="container">
     <div class="header">
-      <p class="no-margin"><strong>me</strong></p>
+      <p class="no-margin"><strong>writing</strong></p>
     </div>
   </div>
+
   <div class="container">
     <div class="content">
-      <p class="no-margin"><a href="https://blog.necro.tech/">writing</a></p>
-      <p class="no-margin"><a rel="me" target="_blank" href="https://ghost.cafe/@NecroTechno">social</a></p>
-      <p class="no-margin"><a rel="me" target="_blank" href="https://tilde.club/~necrotechno/">~</a></p>
-      <p ><a rel="me" target="_blank" href="https://glitch.com/@NecroTechno">glitch</a></p>
-      <p class="no-margin"><a href="mailto:necrotechno@riseup.net">email</a></p>
-      <p class="no-margin">GPG - 538F 53D1 B8C9 69BB 3B56 D131 BF09 9E07 53F0 A785</p>
+      {% for post in collections.posts.pages %}
+      <p class="no-margin"><a href="{{ post.permalink }}">{{ post.title }}</a> - {{ post.published_date | date: "%d %B %Y" }} </p>
+      {% endfor %}
     </div>
   </div>
+
   <div class="container">
     <div class="header">
       <p class="no-margin"><strong>links</strong></p>
