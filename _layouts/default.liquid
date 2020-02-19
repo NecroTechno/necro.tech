@@ -17,44 +17,46 @@
 
   {% include "sidebar.liquid" %}
 
-  <div class="container">
-    <div class="header">
-      <p class="no-margin"><strong>writing</strong></p>
+  <div id="content">
+    <div class="container">
+      <div class="header">
+        <p class="no-margin"><strong>writing</strong></p>
+      </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="content">
-      {% for post in collections.posts.pages %}
-      <p class="no-margin"><a href="{{ post.permalink }}">{{ post.title }}</a> - {{ post.published_date | date: "%d %B %Y" }} </p>
-      {% endfor %}
+    <div class="container">
+      <div class="content">
+        {% for post in collections.posts.pages %}
+        <p class="no-margin"><a href="{{ post.permalink }}">{{ post.title }}</a> - {{ post.published_date | date: "%d %B %Y" }} </p>
+        {% endfor %}
+      </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div class="header">
-      <p class="no-margin"><strong>links</strong></p>
+    <div class="container">
+      <div class="header">
+        <p class="no-margin"><strong>links</strong></p>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="content">
-      <p class="no-margin"><a href="https://www.eff.org/" target="_blank">EFF</a></p>
-      <p class="no-margin"><a href="https://www.resetera.com/" target="_blank">ResetEra</a></p>
-      <p class="no-margin"><a href="https://vetusware.com/" target="_blank">VETUSWARE</a></p>
+    <div class="container">
+      <div class="content">
+        <p class="no-margin"><a rel="noopener" href="https://www.eff.org/" target="_blank">EFF</a></p>
+        <p class="no-margin"><a rel="noopener" href="https://www.resetera.com/" target="_blank">ResetEra</a></p>
+        <p class="no-margin"><a rel="noopener" href="https://vetusware.com/" target="_blank">VETUSWARE</a></p>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="header">
-      <p class="no-margin"><strong>latest commits</strong></p>
+    <div class="container">
+      <div class="header">
+        <p class="no-margin"><strong>latest commits</strong></p>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="content">
-      {% for log in site.data.commits limit:5 %}
-        <p class="no-margin"><a target="_blank" href="https://github.com/NecroTechno/necro.tech/commit/{{ log.commit }}">{{ log.commit }}</a></p>
+    <div class="container">
+      <div class="content">
+        {% for log in site.data.commits limit:5 %}
+        <p class="no-margin"><a rel="noopener" target="_blank" href="https://github.com/NecroTechno/necro.tech/commit/{{ log.commit }}">{{ log.commit }}</a></p>
         <p class="no-margin">{{ log.message }}</p>
         <p>{{ log.date }}</p>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </body>

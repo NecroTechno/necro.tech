@@ -13,14 +13,16 @@
 
   {% include "sidebar.liquid" %}
 
-  <div class="container">
-    <div class="header">
-      <p class="no-margin"><b><a href="{{ page.permalink }}">{{ page.title }}</a></b> - {{ page.published_date | date: "%d %B %Y" }} </p>
+  <div id="content">
+    <div class="container">
+      <div class="header">
+        <p class="no-margin"><b><a href="{{ page.permalink }}">{{ page.title }}</a></b> - {{ page.published_date | date: "%d %B %Y" }} </p>
+      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="content">
-      {{ page.content }}
+    <div class="container">
+      <div class="content">
+        {{ page.content }}
+      </div>
     </div>
   </div>
 </body>
