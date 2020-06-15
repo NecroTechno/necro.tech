@@ -3,7 +3,7 @@ title: "Online Subculture, Capital, and Constructionist Communication"
 published_date: "2019-04-24 11:05:43 +1000"
 layout: post.liquid
 is_draft: false
-data: {page_size: 9.87}
+data: {page_size: 25.59}
 ---
 From conception to transmission to interpretation, the procedure of communicating a concept to another person is a complicated task. An important function of successful communication is understanding your audience’s background and transmitting your message succinctly in language that can be interpreted by the receiver. Understanding how a cultural and historical context frames a conversation is fundamental to effective communication; interpreting our relationships through this lens is a social constructionist perspective of communication.
 
