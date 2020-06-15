@@ -1,4 +1,4 @@
-ignore: ["README.md", "git_log.sh"]
+ignore: ["README.md", "git_log.sh", "*.swp", "*.swo"]
 site:
   title: NecroTechno
   description: Personal Site
